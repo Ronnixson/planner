@@ -30,27 +30,20 @@ function prevSlide(){
 showSlide();
 setInterval(nextSlide,3000);
 
+
+
+ function openMenu(){
+	var menus = document.getElementById("sidebar");
+	var close = document.getElementById("img");
+   
+	menus.style.display="block";
+ }
  
 
-function handleSubmit(event){
-	event.preventDefault();
-}
-
-function add(){
-
-	let companyName = prompt("Enter Company-Name:");
-	let servicePrice = prompt("Enter Service-Price:");
-
-
-	let newItem =document.createElement('li');
-newItem.innerHTML= companyName + ' -Ugx'+ servicePrice;
-document.getElementById('item').appendChild(newItem);
-}
-
-
-
- var menus = document.getElementById("sidebar");
-var menuBtn =document.getElementById("img");
-menuBtn.addEventListener(click,()=>{
+ function closeMenu(){
+	var menus = document.getElementById("sidebar");
+	var close = document.getElementById("img");
+   
 	menus.style.display="none";
-});
+ }
+ 

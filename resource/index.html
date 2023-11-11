@@ -7,9 +7,11 @@
 	<!-- Boxicons -->
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<!-- My CSS -->
+	
 	<link rel="stylesheet" href="/css/style.css">
 
 	<title>Events-Group</title>
+	<link rel="shortcut icon" type="image/jpg" href="/images/1.jpg">
 </head>
 <body style="background:#eee">
 
@@ -17,7 +19,7 @@
 	<!-- SIDEBAR -->
 	<section id="sidebar">
 		<a href="#" class="brand">
-			<img src="/images/close.png" onclick="menu()" id="img">
+			<img src="/images/close.png" onclick="closeMenu()" id="img">
 			<span class="text">EVENTS-GROUP</span>
 		</a>
 		<ul class="side-menu top">
@@ -30,7 +32,7 @@
 			<li>
 				<a href="/resource/tents.html">
 					<i class='bx bxs-shopping-bag-alt'></i>
-					<span class="text">Tents & Furniture
+					<span class="text">Tents & Seats
 					</span>
 				</a>
 			</li>
@@ -80,7 +82,7 @@
 
 		<!-- MAIN -->
 		<main id="main">
-			<span class="openMenu"><img src="/images/menu.png"></span>
+			<span class="openMenu"><img src="/images/menu.png" onclick="openMenu()"></span>
 			<div class="head-title">
 				<div class="left">
 					<h1>Dashboard</h1>
@@ -108,26 +110,31 @@
 					<i class='bx bxs-calendar-check' ></i>
 					<span class="text">
 						<h3>SECTION</h3>
-						<p><a href="/resource/tents.html">Tents & Furniture</a></p>
+						<p><a href="/resource/tents.html">Tents & Seats</a></p>
 					</span>
 				</li>
 				<li>
-					<i class='bx bxs-group' ></i>
+					<i class='bx bxs-calendar-check' ></i>
 					<span class="text">
 						<h3>SECTION</h3>
 						<p><a href="/resource/sound.html">Sound Sytems</a></p>
 					</span>
 				</li>
 				<li>
-					<i class='bx bxs-dollar-circle' ></i>
+					<i class='bx bxs-calendar-check' ></i>
 					<span class="text">
 						<h3>SECTION</h3>
-						<p><a href="/resource/meals.html">Food/Meals</a></p>
+						<p><a href="/resource/meals.html">Food & Drinks</a></p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-calendar-check' ></i>
+					<span class="text">
+						<h3>SECTION</h3>
+						<p><a href="#">Decoration & Ushers</a></p>
 					</span>
 				</li>
 			</ul>
-
-			<div class="table-data" id="sublinks">
 				<div class="order">
 					<div class="head">
 						<!--<h3>Personnel Management</h3>-->
@@ -144,7 +151,7 @@
 						</li>
 						
 						<li style="box-shadow:6px 6px 6px #ddd;">
-							<i class='bx bxs-group' ></i>
+							<i class='bx bxs-calendar-check' ></i>
 							<span class="text">
 								<h3>SECTION</h3>
 								<p><a href="/resource/vehicle.html">Vehicles</a></p>
@@ -158,14 +165,14 @@
 							</span>
 						</li>
 						<li style="box-shadow:6px 6px 6px #ddd; background:#014727;">
-							<i class='bx bxs-dollar-circle' ></i>
+							<i class='bx bxs-group' ></i>
 							<span class="text">
 								<h3 style="color: #fff;">SECTION</h3>
 								<p><a href="sign.html" style="color: #fff;">Become a Provider</a></p>
 							</span>
 						</li>
 						<li style="box-shadow:6px 6px 6px #ddd; background-color: darkred;">
-							<i class='bx bxs-group' ></i>
+							<i class='bx bxs-dollar-circle' ></i>
 							<span class="text">
 								<h3 style="color: #fff;">SECTION</h3>
 								<p><a href="waitlist.html" style="color: #fff;">WaitList</a></p>
@@ -173,7 +180,6 @@
 						</li>
 					</ul>
 				</div>
-			</div>
 		</main>
 		<!-- MAIN -->
 	</section>
